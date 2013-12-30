@@ -70,7 +70,7 @@ public class ConsoleCore implements CommandMarker, MqttCallback, DisposableBean 
 			@CliOption(key = { "ssl" }, mandatory = false, specifiedDefaultValue = "true", unspecifiedDefaultValue = "false") boolean ssl,
 			@CliOption(key = { "username" }, mandatory = false, specifiedDefaultValue = "anonymous", unspecifiedDefaultValue = "") String username,
 			@CliOption(key = { "password" }, mandatory = false, specifiedDefaultValue = "", unspecifiedDefaultValue = "") String password,
-			@CliOption(key = { "client-id" }, mandatory = false, specifiedDefaultValue = "mqtt-cli", unspecifiedDefaultValue = "mqtt-cli") String clientId) {
+			@CliOption(key = { "clientId" }, mandatory = false, specifiedDefaultValue = "mqtt-cli", unspecifiedDefaultValue = "mqtt-cli") String clientId) {
 
 		try {
 			String tmpDir = System.getProperty("java.io.tmpdir");
